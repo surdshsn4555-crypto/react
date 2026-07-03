@@ -1,7 +1,7 @@
 // import { useState } from "react";
 import React from 'react';
 
-const Card = (props, onDelete) => {
+const Card = (props, del) => {
 
     // let[deleted, setDeleted] = useState(false);
 
@@ -22,7 +22,7 @@ const Card = (props, onDelete) => {
             </div>
             <div>
               <button onClick={ () => {
-                props.onDelete();
+                props.del();
               }
 
                  } className='bg-blue-500 text-white px-4 py-2 rounded-lg mt-4'>del</button>  
